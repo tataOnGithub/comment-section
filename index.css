@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(223, 19%, 93%);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  max-width: 800px;
+  min-width: 400px;
+  margin: 30px auto;
+}
+
+button {
+  color: hsl(238, 40%, 52%);
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+button:hover {
+  color: hsl(212, 24%, 26%);
+}
+
+.comment-text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.comment {
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+}
+
+.comment-reply {
+  margin-left: 70px;
+}
+
+.comments-container {
+  width: 100%;
+  margin: 10px;
+}
+
+.comment-votes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: hsl(238, 40%, 52%);
+  background-color: hsl(223, 19%, 93%);
+  padding: 2px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#increment, #decrement {
+  background-color: hsl(223, 19%, 93%);
+  color: hsl(238, 40%, 52%);
+  font-weight: bold;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+}
+
+.update-comment-text {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  background-color: white;
+  padding: 5px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.new-comment-div {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.new-comment-img {
+  width: 50px;
+}
+
+.update-comment-text-child {
+  display: flex;
+  align-items: flex-start;
+}
+
+.update-comment-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
